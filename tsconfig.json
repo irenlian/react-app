@@ -56,12 +56,6 @@
         // "typeRoots": [],                       /* List of folders to include type definitions from. */
         "types": [
             "./src/models",
-            "./src/models/countries",
-            "./src/models/currency",
-            "./src/models/customer",
-            "./src/models/portfolioItem",
-            "./src/models/pricing",
-            "./src/models/product",
             "node",
             "jest"
         ],

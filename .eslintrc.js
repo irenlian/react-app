@@ -2,7 +2,7 @@ module.exports = {
     root: true,
     parser: '@typescript-eslint/parser',
     ignorePatterns: ['config/*'],
-    plugins: ['@typescript-eslint', 'testing-library', 'jest-dom', 'graphql', 'react-hooks', 'prettier'],
+    plugins: ['@typescript-eslint', 'testing-library', 'jest-dom', 'react-hooks', 'prettier'],
     extends: [
         'airbnb-typescript',
         'plugin:testing-library/react',

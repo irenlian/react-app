@@ -1,6 +1,8 @@
 {
     "general/cancel": "Cancel",
     "general/save": "Save",
+    "general/error": "Error",
+    "general/reload": "Reload",
     "general/loading": "Loading",
 
     "hero/title": "Dashboard"

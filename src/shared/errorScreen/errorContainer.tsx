@@ -3,30 +3,26 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 
 import * as Locale from '~/locales/localeKeys';
-import Button from '~/shared/button';
-import { log } from '~/lib/datadog/datadogLogs';
-import { Metrics } from '~/lib/datadog/datadogTypes';
 
 type Props = {
-  hasPadding?: boolean;
+    hasPadding?: boolean;
 };
 
 const ErrorContainer: React.FC<Props> = ({ hasPadding = false }) => {
-  const { t } = useTranslation();
+    const { t } = useTranslation();
 
-  const onReload = () => {
-    log({ event: Metrics.RELOAD, value: 'reload button' });
-    window.location.reload();
-  };
+    const onReload = () => {
+        window.location.reload();
+    };
 
-  return (
-    <Container hasPadding={hasPadding}>
-      <Text>{t(Locale.general.error)}</Text>
-      <Button size="big" color="primary" onClick={onReload}>
-        {t(Locale.general.reload)}
-      </Button>
-    </Container>
-  );
+    return (
+        <Container hasPadding={hasPadding}>
+            <Text>{t(Locale.general.error)}</Text>
+            <button type="button" onClick={onReload}>
+                {t(Locale.general.reload)}
+            </button>
+        </Container>
+    );
 };
 
 export default ErrorContainer;

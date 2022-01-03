@@ -5,6 +5,8 @@
 export const general = {
   cancel: 'general/cancel',
   save: 'general/save',
+  error: 'general/error',
+  reload: 'general/reload',
   loading: 'general/loading',
 };
 
